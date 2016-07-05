@@ -1,6 +1,6 @@
 # pgzabbix
 
-My first Python script to monitoring PostgreSQL on Zabbix using zabbix_sender
+My first Python script to monitoring PostgreSQL on Zabbix.
 
 ## Notice
 
