@@ -31,13 +31,13 @@ Options:
   -d DB,        --database=DB The database you want to monitoring
 ```
 
-Ensure that zabbix_agentd is up and running, and schedule the pgzabbix.py on crontab or cron.d. 
+* Ensure that zabbix_agentd is up and running, and schedule the pgzabbix.py on crontab or cron.d. 
 
 Example:
 ```
 # Postgres Graph
 */5 * * * * /u00/scripts/postgres/pgzabbix/pgzabbix.py -d mydatabase > /dev/null 2>&1 
-``
+```
 
 ## License
 
