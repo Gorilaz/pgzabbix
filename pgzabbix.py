@@ -36,9 +36,9 @@ def main():
     parser.add_option('-H', '--host', action='store', type='string', dest='host', default='127.0.0.1', help='The hostname you want to connect to')
     parser.add_option('-P', '--port', action='store', type='int',    dest='port', default=5432,        help='The port postgresql is runnung on')
     parser.add_option('-u', '--user', action='store', type='string', dest='user', default='postgres',  help='The username you want to login as')
-    parser.add_option('-p', '--pass', action='store', type='string', dest='passwd', default='',        help='The password you want to use for that user')
+    parser.add_option('-p', '--pass', action='store', type='string', dest='passwd', default='',        help='The password you use for that user')
     parser.add_option('-s', '--slow-query-threshold', action='store', type='string', dest='slowquery', default='180', help='Threshold in seconds for slow query')
-    parser.add_option('-d', '--database', action='store', type='string', dest='db', default='postgres', help='The password you want to use for that user')
+    parser.add_option('-d', '--database', action='store', type='string', dest='db', default='postgres', help='The database you want to monitoring')
     (options, args) = parser.parse_args()
     
     dsn = "host='%s' port='%s' dbname='%s' user='%s' password='%s'" % (options.host, options.port, options.db, options.user, options.passwd)
